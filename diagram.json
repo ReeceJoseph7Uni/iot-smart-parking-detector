@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "author": "Reece",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic", "top": -142.5, "left": 285.5, "attrs": { "distance": "100" } },
+    { "type": "wokwi-led", "id": "redLed", "top": 92.4, "left": 322.6, "attrs": { "color": "red", "label": "Occupied" } },
+    { "type": "wokwi-led", "id": "greenLed", "top": 92.4, "left": 421.4, "attrs": { "color": "green", "label": "Available" } },
+    { "type": "wokwi-resistor", "id": "rRed", "top": 160.5, "left": 305.2, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "rGreen", "top": 160.5, "left": 404.0, "attrs": { "value": "220" } },
+    { "type": "board-ssd1306", "id": "oled", "top": -128.38, "left": -248.87, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-buzzer", "id": "buzzer", "top": 230.4, "left": 322.2, "attrs": { "volume": "0.1" } },
+    { "type": "wokwi-text", "id": "title", "top": -187.2, "left": -36.0, "attrs": { "text": "Smart Parking Bay" } },
+    { "type": "wokwi-text", "id": "occupiedLabel", "top": 57.6, "left": 295.2, "attrs": { "text": "Red = Occupied" } },
+    { "type": "wokwi-text", "id": "availableLabel", "top": 57.6, "left": 391.2, "attrs": { "text": "Green = Available" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+
+    [ "ultrasonic:VCC", "esp:5V", "red", [] ],
+    [ "ultrasonic:GND", "esp:GND.1", "black", [] ],
+    [ "ultrasonic:TRIG", "esp:5", "green", [] ],
+    [ "ultrasonic:ECHO", "esp:18", "blue", [] ],
+
+    [ "redLed:A", "esp:26", "red", [] ],
+    [ "redLed:C", "rRed:1", "black", [] ],
+    [ "rRed:2", "esp:GND.1", "black", [] ],
+
+    [ "greenLed:A", "esp:27", "green", [] ],
+    [ "greenLed:C", "rGreen:1", "black", [] ],
+    [ "rGreen:2", "esp:GND.1", "black", [] ],
+
+    [ "oled:VCC", "esp:3V3", "red", [] ],
+    [ "oled:GND", "esp:GND.2", "black", [] ],
+    [ "oled:SDA", "esp:21", "green", [] ],
+    [ "oled:SCL", "esp:22", "blue", [] ],
+
+    [ "buzzer:1", "esp:25", "orange", [] ],
+    [ "buzzer:2", "esp:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
