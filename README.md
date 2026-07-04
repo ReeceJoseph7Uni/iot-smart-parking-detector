@@ -131,7 +131,7 @@ The main firmware is in `sketch.ino`.
 ![Occupied state](Screenshot 2026-07-04 at 20-45-13 Smart Parking Detector Copy (2).png)
 
 <p align="center">
-  <img src="images/available_state.png" width="45%">
+  <img src="Screenshot 2026-07-04 at 20-45-47 Smart Parking Detector Copy (2) - Wokwi ESP32 STM32 Arduino Simulator.png" width="45%">
   <img src="images/occupied_state.png" width="45%">
 </p>
 
