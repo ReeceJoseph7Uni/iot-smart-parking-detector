@@ -4,7 +4,7 @@
 
 **Module:** Internet of Things (IoT) Elective  
 **Project Title:** IoT-Based Smart Parking Space Detector  
-**Group Name / Number:** `[]`  
+**Group Name / Number:** `[Starlidge]`  
 **Student Name:** `[Reece Josephs]`  
 **Student Number:** `[Student No. 218152701]`  
 **Presentation Date:** 20 May 2026
