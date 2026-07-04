@@ -143,7 +143,7 @@ The main firmware is in `sketch.ino`.
 ## Project Demonstration
 
 - **Wokwi Project:** https://wokwi.com/projects/468298076934507521
-- **Demo Video:** `[Insert video link here]`
+- **Demo Video:** `[Smart Parking System Video.mp4]`
 - **Screenshots:** See `images/available_state.png` and `images/occupied_state.png`.
 
 ## References
