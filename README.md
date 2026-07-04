@@ -128,7 +128,12 @@ The main firmware is in `sketch.ino`.
 
 ![Available state](Screenshot 2026-07-04 at 20-45-13 Smart Parking Detector Copy (2).png)
 
-![Occupied state](images/occupied_state.png)
+![Occupied state](Screenshot 2026-07-04 at 20-45-13 Smart Parking Detector Copy (2).png)
+
+<p align="center">
+  <img src="images/available_state.png" width="45%">
+  <img src="images/occupied_state.png" width="45%">
+</p>
 
 ## Challenges & Solutions
 
