@@ -126,7 +126,7 @@ The main firmware is in `sketch.ino`.
 
 ### Wokwi Screenshots
 
-![Available state](images/available_state.png)
+![Available state](Screenshot 2026-07-04 at 20-45-13 Smart Parking Detector Copy (2).png)
 
 ![Occupied state](images/occupied_state.png)
 
