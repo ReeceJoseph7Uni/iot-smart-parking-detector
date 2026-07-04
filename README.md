@@ -124,6 +124,10 @@ The main firmware is in `sketch.ino`.
 | 5 | Change from available to occupied | Buzzer beeps once | Buzzer output was triggered by the status transition in firmware | Pass |
 | 6 | Observe Serial Monitor | Distance and status print every ~500 ms | Serial Monitor printed live distance/status dashboard lines continuously | Pass |
 
+## 🎥 Project Demonstration
+
+[▶️ Watch the Smart Parking System Demo](Smart%20Parking%20System%20Video.mp4)
+
 ### Wokwi Screenshots
 
 <p align="center">
@@ -144,7 +148,7 @@ The main firmware is in `sketch.ino`.
 
 - **Wokwi Project:** https://wokwi.com/projects/468298076934507521
 - **Demo Video:** `[Smart Parking System Video.mp4]`
-- **Screenshots:** See `images/available_state.png` and `images/occupied_state.png`.
+- **Screenshots:** See `Screenshot 2026-07-04 at 20-45-32 Smart Parking Detector Copy (2) - Wokwi ESP32 STM32 Arduino Simulator.png` and `Screenshot 2026-07-04 at 20-45-47 Smart Parking Detector Copy (2) - Wokwi ESP32 STM32 Arduino Simulator.png`.
 
 ## References
 
@@ -154,6 +158,4 @@ The main firmware is in `sketch.ino`.
 4. [Wokwi ESP32 WiFi Networking Documentation](https://docs.wokwi.com/guides/esp32-wifi)
 5. [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306)
 
-## Assessment Notes
 
-This virtual implementation covers the final working project, live demonstration, system design, component selection, wiring, code documentation, testing plan, challenges, and references required by the CPUT IoT Elective README template.
